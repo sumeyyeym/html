@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div p:first-child{
+            color: tomato 
+                /*div'i yazmazsak tüm p etiketlerini etkiler. ama div olursa sadece diz içerisindeki etiketlerin renklerini değiştirir. first-child olduğunda ise yalnızca ilk elemanı tomato yapacaktır.*/
+        }
+
+        #p1{
+/* idsi p1 olan etikette çalışır. # id demektir.*/
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        #p2{
+            background-color: yellow;
+            color: blueviolet;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 40px;
+            font-family: Algerian
+        }
+        
+        .h100{
+/*. class anlamına gelir*/
+height: 100px;
+border: dashed 1px black;
+        }
+
+        .bc{
+            background-color: tomato;
+        }
+
+        .fc{
+            color: chartreuse;
+        }
+
+        .br{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id = "p1">Bilge Adam HTML Dersleri</p>
+        <p id = "p2">Bilge Adam HTML Dersleri</p>
+        <p id = "p3">Bilge Adam HTML Dersleri</p>
+        <p id = "p4">Bilge Adam HTML Dersleri</p>
+        <p id = "p5">Bilge Adam HTML Dersleri</p>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <p class="h100 bc">Bilge Adam HTML Dersleri</p>
+    <p class="h100 fc">Bilge Adam HTML Dersleri</p>
+    <p class="h100 bc br">Bilge Adam HTML Dersleri</p>
+    <p class="fc bc">Bilge Adam HTML Dersleri</p>
+    <p class="">Bilge Adam HTML Dersleri</p>
+</body>
+</html>

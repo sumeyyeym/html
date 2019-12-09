@@ -1,0 +1,82 @@
+﻿#container {
+    width: 1080px;
+    background-color: lightpink;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;
+    /*margin-left: 200px; bunu yaparsak bilgisayardan bilgisayara değişiklik göstermez. auto yaparsak browser boyutuna göre otomatik boyutlandırır*/
+    /*margin dış boşluk, padding iç boşluk*/
+}
+
+#header {
+    width: 1000px;
+    height: auto;
+    background-color: lightcyan;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slider {
+    width: 1000px;
+    height: 300px;
+    background-color: lavender;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box {
+    width: 1000px;
+    height: 300px;
+    background-color: lemonchiffon;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+    #box .box {
+        width: 300px;
+        height: 280px;
+        background-color: lavender;
+        float: left;
+        margin-right: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+        #box .box:last-child {
+            margin-right: 0;
+        }
+
+#logo{
+    height: 75px;
+    
+}
+
+#menu{
+    height: auto;
+    
+}
+
+    #menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: lightpink;
+        height: 45px;
+    }
+
+        #menu ul li {
+            float: left;
+        }
+
+            #menu ul li a {
+                display: block;
+                color: indigo;
+                text-align: center;
+                padding: 14px 14px;
+                text-decoration: none;
+            }
+            #menu ul li a:hover {
+                background-color: lightcyan;
+            }
