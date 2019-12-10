@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <!-- CSS kütüphanesi. Bootstrapten aldık. Bu sayede, bootstrapteki inputları vs kullanabiliyoruz. -->
+</head>
+<body>
+    <!--
+    <div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text">With textarea</span>
+    </div>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+        -->
+    <!-- Bu kodu Bootstrapteki documentation başlığındaki compenents kısmından aldık.
+
+        Extra small = telefon/ mobil -- çözünürlükleri tomatik kendisi yakalıyo. ekranın genişliği kadar.
+        small =  tablet -- çözünürlük 540px.
+        medium, large, extra large = pc
+        Bu bilgiler documentation- layout- overview kısmında detaylı olarak var.
+
+        sm
+        md
+        lg
+        xl
+
+        -->
+    <!-- Overview -->
+    <!--
+    <div class="container bg-danger">
+        bilge adam
+    </div>
+    <br /><hr /><br />
+
+    <div class="container-fluid bg-warning">
+        bilge adam
+    </div>
+    -->
+    <!--Responsive Breakpoints: medya etiketleri-->
+    <!--  her nesne için bir satır eklenecek -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm bg-dark">
+                One of three columns
+            </div>
+            <div class="col-sm bg-danger">
+                One of three columns
+            </div>
+            <div class="col-sm bg-warning">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <br /><hr /><br />
+
+    <!--  bir satır 12 hücreden oluşmalı. bu belirtilmezse satır içerisine kaç col varsa 12ye col sayısını böler ve öyle atama yapar. Aslında arkada 12 hücre vardır ama önde 12 hücre gruplanarak farklı sayılarda görülebilir. yani önde 6 tane hücre gözüküyorsa aslında hücreler 2şer birleşmiştir. -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col bg-danger">
+                1 of 2
+            </div>
+            <div class="col bg-dark">
+                2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-danger">
+                1 of 3
+            </div>
+            <div class="col bg-warning">
+                2 of 3
+            </div>
+            <div class="col bg-dark">
+                3 of 3
+            </div>
+        </div>
+    </div>
+
+    <!-- bu şekilde yapıldığında mobilde de pcde de 3hücre gözükü. değişen tek şey çözünürlük arttıkça ya da düştükçe değişen col genişilikleri olacaktır. -->
+    <br /><hr /><br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col bg-info">col</div>
+            <div class="col bg-primary">col</div>
+            <div class="w-100"></div>
+            <div class="col bg-danger">col</div>
+            <div class="col bg-warning">col</div>
+        </div>
+    </div>
+
+    <!-- Bir satırda 4 hücre olacak ama her ücre 6 parçadan oluşacak ise w-100 kısmını kullanıyoruz. aslında burası tek bir satır ama alt alta 12 parçalı 4 hücre gözüküyor -->
+    <br /><hr /><br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col bg-danger">
+                1 of 3
+            </div>
+            <div class="col-6 bg-dark">
+                2 of 3 (wider)
+            </div>
+            <div class="col bg-danger">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-info">
+                1 of 3
+            </div>
+            <div class="col-5 bg-primary">
+                2 of 3 (wider)
+            </div>
+            <div class="col bg-info">
+                3 of 3
+            </div>
+        </div>
+    </div>
+
+    <br /> <hr /><br />
+
+    <!-- Variable width content -->
+
+    <div class="container">
+        <div class="row justify-content-md-center"> <!--md'deyken içeriği ortala-->
+            <div class="col col-lg-2">
+                1 of 3
+            </div>
+            <div class="col-md-auto"> <!--md'ye geçtiğinde hüçre ieçerisindeki değişkenin uzunluğuna göre hücre genişliğini otomatik ayarlayacak-->
+                Variable width content
+            </div>
+            <div class="col col-lg-2">
+                3 of 3
+            </div>
+        </div>
+        <!-- Yukarıdaki satırda 12 hücrenin 12si de kullanılmamıştır. bunun sebebi orta hücrede content içeriğine göre genişlik verilmesidir. eğer ki bu kısım 3 hücre kaplıyorsa çözünürlük ne kadar değişirse değişsin bu 3 hücre değişmez. ilk ve son hücreler 2şer hücre kapladığından bu satır 7 hücre kaplıyor olabilri. Ama 12 hücreye yayılmadığı kesin.  -->
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-md-auto">
+                Variable width content
+            </div>
+            <div class="col col-lg-2">
+                3 of 3
+            </div>
+        </div>
+    </div>
+</body>
+</html>

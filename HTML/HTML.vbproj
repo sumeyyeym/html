@@ -94,9 +94,12 @@
   <ItemGroup>
     <Content Include="css\main.css" />
     <Content Include="img\32266443_427249904354205_932182665451274240_n.png" />
+    <Content Include="img\a.jpg" />
+    <Content Include="img\b.jpg" />
     <Content Include="img\download.jpg" />
     <Content Include="img\purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" />
     <Content Include="index1.html" />
+    <Content Include="index10.html" />
     <Content Include="index2.html" />
     <Content Include="index3.html" />
     <Content Include="index4.html" />
@@ -104,6 +107,7 @@
     <Content Include="index6.html" />
     <Content Include="index7.html" />
     <Content Include="index8.html" />
+    <Content Include="index9.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
