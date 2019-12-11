@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <!-- JavaScript -->
+    <script>
+
+        var ders = "C#"
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <button class="btn btn-outline-dark" onclick="alert('Bilge Adam ' + ders + ' Dersleri')">Mesaj</button>
+                <!-- ya da -- alert kısmındaki tırnak işaretlerine bak!  --> <button class="btn btn-outline-dark" onclick='alert("Bilge Adam " + ders + " Dersleri")'>Mesaj</button>
+                <button class="btn btn-outline-dark" onclick="alert(`Bilge Adam ${ders} Dersleri`)">Mesaj</button> <!-- bu şekil yazım -AltGr + , ile gelen kesme işareti- eski sürümlü browserlarda çalışmaz. ayrıca $ işareti ile yazılan kısım da yine bu kesme işareti ile yazılan kısım için geçerlidir -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <!-- JavaScript -->
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <p id="demo"></p>
+                <button id="btnClick" class="btn btn-outline-warning">Click Me!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        //var items = document.getElementsByClassName("btn");
+        //console.log(items)
+        document.getElementById("btnClick")
+                .addEventListener("click",
+                function ()
+                {
+                    //alert("Hadi ara verleim!")
+                    document.getElementById("demo").innerHTML = "Bilge Adam JS Dersleri"
+                })
+
+    </script>
+    <!--
+        document = sayfanın tamamı demek
+        console.log = c# console.writline = uipath outline
+        getElementsByClassName = koleksiyon teslim eder
+        getElementById = tekil nesne teslim eder
+        addEventListener = event eklemek için
+        iki etiket arası innerHTML'dir.
+
+        internetten JS  event bak
+    -->
+</body>
+</html>

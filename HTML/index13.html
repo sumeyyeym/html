@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <!-- JavaScript -->
+    <script>
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <img id="resim" class = "img-fluid img-thumbnail shadow" src="img/4f2.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("resim")
+            .addEventListener("click", function () {
+                //src'nin değerini (value) al:
+                var src = this.attributes["src"].value;
+                if (src.includes("4f2")) {
+                    this.setAttribute("src", "img/784.jpg")
+                }
+                else {
+                    this.setAttribute("src", "img/4f2.jpg")
+                }
+            })
+    </script>
+</body>
+</html>
