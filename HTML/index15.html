@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var itemsCount = $("#container")
+                .find("*") //içerideki nesneleri yakalaması için 
+                //.css("background-color", "yellowgreen") -- tek bir css değeri atama
+                .css({
+                    "background-color": "#818988",
+                    "height": "40px",
+                    "text-align": "center",
+                    "line-height": "50px"
+                }).length
+            $("#container").prepend("<h1 class='text-black-50'>" + itemsCount + "adet eleman found</h1>")
+
+            console.log(itemsCount)
+        })
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <div id="container">
+                    <p>Temizleme İşlemi</p>
+                    <button class="btn btn-danger">Temizle</button>
+
+                    <span>Kaydetme İşlemi</span>
+                    <button class="btn btn-info">Kaydet</button>
+
+                    <h1 class="text-black-50">Güncelleme İşlemi</h1>
+                    <button class="btn btn-warning">Güncelle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
